@@ -97,7 +97,7 @@ public class Main// Exercicio 5
 
 
 import java.lang.Math;
-public class Main//Exercicio 6 
+public class Main// Exercicio 6 
 { 
         public static void main(String[] args) { 
         double valor1, valor2, valor3,valor4,valor5, valor6, valor7, valor8, valor9;
@@ -124,23 +124,31 @@ public class Main//Exercicio 6
 
 
 import java.lang.Math;
-public class Main//Exercicio 7 
+public class Main// Exercicio 7 
 { 
         public static void main(String[] args) { 
-double valor1, valor2, valor3,valor4,valor5, valor6, valor7, valor8, valor9;
+double valor1, valor2, valor3,valor4,valor5, valor6;
+String texto_a,texto_A;
 
 valor1 = Math.pow(3, 30);
 valor2 = 120-30 ;
 
-System.out.printf(" o resultado da equação ((120-30)=(3^30)) é: %s%n", valor2 == valor1);
+System.out.printf("O resultado da  primeira expressão  ((120-30)=(3^30)) é: %s%n", valor2 == valor1);
 
 valor3 = 20 % 4;
-System.out.printf("o resultado da equação (não ((20 modulo 4) = 1) Ou (9!=9)) é: %s, %s", valor3 !=1, 9!=9);
+System.out.printf("O resultado da segunda expressão (não ((20 modulo 4) = 1) Ou (9!=9)) é: %s, %s%n", valor3 != 1, 9!=9);
+System.out.printf("Resultando em: true %n");
 
+valor5 = Math.pow(5, 2);
+System.out.printf("O resultado da expressão ((5 módulo^2)>3 é: %s%n", valor5 > 3);
+
+texto_a = "a";
+texto_A = "A";
+System.out.printf("O resultado da expressão a=A é: %s%n", texto_a == texto_A);
 
 
         }
-    }
+}
 
 
 
@@ -159,9 +167,79 @@ public class Main// Exercicio 8
    } 
 } 
 
+import java.lang.Math;// Exercicio 9
+public class Main {
+        public static void main(String[] args) {
+        double area,l, areaq;
+        area = 350;
+        l=Math.pow(area, 2);
+        areaq = l;
+        System.out.printf("o cálculo da área de um quadrado de 350 metros de lado é: %.2f%n", areaq);
+       
+        
+    }
+    
+}
+
+import java.lang.Math;// Exercicio 10
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args) {
+        double pi0,pi,area,area0,raio;
+        Scanner e=new Scanner(System.in);
+        System.out.println("Insira o valor do raio.");
+        raio=e.nextDouble();
+        pi=Math.PI;
+        pi0=3.1415;
+        area=pi*Math.pow(raio, 2);
+        area0=pi0*raio*raio;
+        System.out.printf("Área = %f\nÁrea0 = %f\n",area,area0);
+        
+    }
+    
+}
 
 
 
+import java.util.Scanner;// Exercicio 11
+public class Main {
+    public static void main(String[] args) {
+    int ano_atual,ano_naso,id,id2030;
+    Scanner e=new Scanner(System.in);
+    System.out.println("Insira o ano atual:");
+    ano_atual=e.nextInt();
+    System.out.println("Insira o ano de seu nascimento:");
+    ano_naso=e.nextInt();
+    id=ano_atual-ano_naso;
+    System.out.println("sua idade é: "+id);
+    id2030=2030-ano_naso;
+    System.out.println("sua idade em 2030 é: "+id2030);    
+e.close(); 
+    }
+    
+}
+
+
+
+import java.lang.Math;// Exercicio 12
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        double n,q,c,r,np;
+        Scanner e= new Scanner(System.in);
+        System.out.println("Insira um número:");
+        n=e.nextDouble();
+        q=Math.pow(n, 2);
+        c=Math.pow(n, 3);
+        r=Math.sqrt(n);
+        np=Math.pow(n, 10);
+        System.out.printf("Número: %.3f%nQuadrado %.3f%n",n,q);
+        System.out.printf("Cubo: %.3f%nRaiz: %.3f%nNúmero elevado a potência 10: %.3f%n",c,r,np); 
+ e.close();        
+    }
+    
+}
 
 
 
