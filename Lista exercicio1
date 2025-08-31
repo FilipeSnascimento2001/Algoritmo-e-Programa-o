@@ -6,4 +6,5 @@ public class Exercicio1 {
         int registro = 1142948649;
         System.out.printf("Registro academico: ID %d%n", registro);
         System.out.println("Cursando Analise de Desenvolvimento de Sistemas");
-        
+ }       
+}
