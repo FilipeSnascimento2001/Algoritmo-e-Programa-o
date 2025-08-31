@@ -1,0 +1,160 @@
+public class Main// Exercicio 1 - Filipe Silva do nascimento 
+{
+    public static void main(String[] args) {
+        String nome = "Filipe Silva do Nascimento";
+        System.out.printf("Nome completo: %s%n", nome);
+        int registro = 1142948649;
+        System.out.printf("Registro academico: ID %d%n", registro);
+        System.out.println("Cursando Analise de Desenvolvimento de Sistemas");
+ }       
+}
+
+
+public class Main// Exercicio 2
+{
+	public static void main(String[] args) {
+	    int idade = 24;
+	    double altura = 1.70;
+	    System.out.printf("Quantos anos você tem?%nEu tenho %d anos%n", idade);
+	    System.out.printf("Qual a sua altura?%nEu tenho %.2f de altura%n", altura);
+	    System.out.printf("Qual seu status na sala de aula? %nPresente");
+		
+		
+	}
+}
+
+
+import java.util.Scanner;
+public class Main// Exercicio 3 
+{ 
+    public static void main(String[] args) { 
+    int n1, n2, produto;
+    Scanner entrada = new Scanner(System.in);
+
+    System.out.println("Insira um numero inteiro:");
+    n1 = entrada.nextInt();
+
+    System.out.println("Insira um segundo numero inteiro:");
+    n2 = entrada.nextInt();
+
+    produto = n1*n2;
+
+    System.out.printf("O produto entre a os dois numeros interios é: %d10", produto); 
+entrada.close();
+   } 
+} 
+
+
+import java.util.Scanner;
+public class Main// Exercicio 4 
+{ 
+        public static void main(String[] args) { 
+        int n1, n2, n3, n4, soma;
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Insira sua primeira nota:");
+        n1 = entrada.nextInt();
+
+        System.out.println("Insira sua segunda nota:");
+        n2 = entrada.nextInt();
+
+        System.out.println("Insira sua terceira nota:");
+        n3 = entrada.nextInt();
+
+       System.out.println("Insira sua terceira nota:");
+       n4 = entrada.nextInt();
+
+       soma = n1+n2+n3+n4;
+
+       System.out.printf("A media do aluno é: %d", soma);
+entrada.close();
+   } 
+} 
+
+
+import java.util.Scanner;
+public class Main// Exercicio 5 
+{ 
+        public static void main(String[] args) { 
+        double n1,n2,n3,media;
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Insira sua primeira nota:");
+        n1 = entrada.nextDouble();
+
+        System.out.println("Insira sua segunda nota:");
+        n2 = entrada.nextDouble();
+
+        System.out.println("Insira sua terceira nota:");
+        n3 = entrada.nextDouble();
+
+        media = (n1+n2+n3)/3;
+
+        System.out.printf("A media do aluno é: %.2f", media);
+        entrada.close();
+   } 
+} 
+
+
+import java.lang.Math;
+public class Main//Exercicio 6 
+{ 
+        public static void main(String[] args) { 
+        double valor1, valor2, valor3,valor4,valor5, valor6, valor7, valor8, valor9;
+
+        valor1 = (20-15)/2;
+        System.out.printf("O resultado da expressão (20-15)/2 é: %.2f%n", valor1);
+
+        valor2 = Math.pow(15, 2);
+        valor3 = 5/20;
+        valor4 = Math.pow(2, valor3);
+        valor5 = (valor4+30/valor2);
+
+        System.out.printf("O resultado da expressão 2^(5/20)+30/(15^2) é: %.2f%n", valor5);
+
+        valor6 = 35/(6+2);
+        System.out.printf("O resultado da expressão 35/(6+2) é: %.2f%n", valor6);
+
+        valor7 =23;
+        valor8 = 4;
+        valor9 = valor7 % valor8;
+        System.out.printf("O resultado modulo da divisão 23 por 4 é: %.2f%n", valor9);
+   } 
+} 
+
+
+import java.lang.Math;
+public class Main//Exercicio 7 
+{ 
+        public static void main(String[] args) { 
+double valor1, valor2, valor3,valor4,valor5, valor6, valor7, valor8, valor9;
+
+valor1 = Math.pow(3, 30);
+valor2 = 120-30 ;
+
+System.out.printf(" o resultado da equação ((120-30)=(3^30)) é: %s%n", valor2 == valor1);
+
+valor3 = 20 % 4;
+System.out.printf("o resultado da equação (não ((20 modulo 4) = 1) Ou (9!=9)) é: %s, %s", valor3 !=1, 9!=9);
+
+
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
