@@ -1,0 +1,12 @@
+public class Main// filipe silva do nascimento
+{
+	public static void main(String[] args) {
+	    int idade = 24;
+	    double altura = 1.70;
+	    System.out.printf("Quantos anos você tem?\n"+ idade +" anos\n");
+	    System.out.printf("Qual a sua altura?\n"+ altura +"\n");
+	    System.out.printf("Qual seu status na sala de aula? \nPresente");
+		
+		
+	}
+}
