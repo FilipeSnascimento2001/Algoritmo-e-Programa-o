@@ -144,6 +144,22 @@ System.out.printf("o resultado da equação (não ((20 modulo 4) = 1) Ou (9!=9))
 
 
 
+public class Main// Exercicio 8 
+{ 
+        public static void main(String[] args) { 
+        double n1,n2,n3, n4, media;
+      
+        n1 = 8.0;
+        n2 = 7.5;
+        n3 = 4.5;
+        n4 = 9.0;
+        media = (n1+n2+n3+n4)/4;
+        System.out.println("Insira o cálculo da média das seguintes notas 8.0, 7.5, 4.5 e 9");
+        System.out.printf("A media entre as notas é: %.2f%n", media);
+   } 
+} 
+
+
 
 
 
