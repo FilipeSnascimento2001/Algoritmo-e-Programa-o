@@ -60,5 +60,24 @@ public class Main {
         }
     }
 
+import java.util.Scanner;// exercicio 4
+public class Main {
+    public static void main(String[] args) {
+    Scanner e=new Scanner(System.in);
+    double n1,n2;
 
+
+    System.out.println("Digite dois número interio: ");
+    n1 = e.nextDouble();
+    n2 = e.nextDouble();
+
+    if (n1 == n2){
+        System.out.println("Os números são iguais");}
+    else if (n1 > n2) {
+        System.out.printf("A ordem decrescente entre o números seria %.2f e %.2f", n1, n2);}
+    else {
+        System.out.printf("A ordem decrescente entre o números seria %.2f e %.2f ", n2, n1);}
+
+        }
+    }
 
