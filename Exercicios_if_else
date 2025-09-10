@@ -35,3 +35,30 @@ public class Main{
         entrada.close();
     }
 }
+
+
+import java.util.Scanner;// Exercicio 3
+public class Main {
+    public static void main(String[] args) {
+    Scanner e=new Scanner(System.in);
+    int n1,n2,resultado;
+
+
+    System.out.println("Digite dois número interio: ");
+    n1 = e.nextInt();
+    n2 = e.nextInt();
+
+    if (n1 == n2){
+        System.out.println("Os números inteiros são iguais ");}
+    else if (n1 > n2) {
+        resultado = n1 - n2;
+        System.out.printf("A diferença do %d e o numero %d é: %d", n1, n2, resultado);}
+    else {
+        resultado = n2 - n1;
+        System.out.printf("A diferença do %d e o numero %d é: %d", n2, n1, resultado);}
+
+        }
+    }
+
+
+
