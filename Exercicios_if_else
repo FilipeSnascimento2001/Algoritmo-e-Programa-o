@@ -28,7 +28,7 @@ public class Main {
 
 
 
-import java.util.Scanner;// Exercicio 1
+import java.util.Scanner; // Exercicio 1 Filipe Silva Do Nascimento
 public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
@@ -47,7 +47,7 @@ public class Main {
 }
 
 
-import java.util.Scanner;// Exercicio 2
+import java.util.Scanner; // Exercicio 2 Filipe Silva Do Nascimento 
 
 public class Main{
     public static void main(String[] args) {
@@ -67,7 +67,7 @@ public class Main{
 }
 
 
-import java.util.Scanner;// Exercicio 3
+import java.util.Scanner; // Exercicio 3 Filipe Silva Do Nascimento
 public class Main {
     public static void main(String[] args) {
     Scanner e=new Scanner(System.in);
@@ -90,7 +90,7 @@ public class Main {
         }
     }
 
-import java.util.Scanner;// exercicio 4
+import java.util.Scanner; // Exercicio 4 Filipe Silva Do Nascimento
 public class Main {
     public static void main(String[] args) {
     Scanner e=new Scanner(System.in);
@@ -111,3 +111,255 @@ public class Main {
         }
     }
 
+import java.util.Scanner; // Exercicio 5 Filipe Silva Do Nascimento
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Coloque um numero:");
+        int num = sc.nextInt();
+
+        if (num >= 50 && num <= 70){
+            System.out.println("Pertence ao intervalo");
+        }
+        else{
+            System.out.println("Não pertence ao intervalo");
+        }
+    }
+}
+
+import java.util.Scanner; // Exercicio 6 Filipe Silva Do Nascimento
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite seu sexo (use M ou F)");
+        String sexo = sc.nextLine();
+
+        System.out.println("Digite sua altura em metros");
+        double altura = sc.nextDouble();
+
+        double peso;
+
+        if (sexo.equalsIgnoreCase("M")){
+            peso = (altura*72.7)- 58;
+            System.out.printf("Peso ideal masculino: %.2f kg\n", peso);
+        }
+        else if (sexo.equalsIgnoreCase("F")){
+            peso = (altura*44.7)- 44.7;
+            System.out.printf("Peso ideal feminino: %.2f kg\n", peso);
+        }
+        else{
+            System.out.println("Sexo invalido. Use M ou F.");
+        }
+    }
+}
+
+
+import java.util.Scanner; // Exercicio 7 Filipe Silva Do Nascimento
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o salario:");
+        double salario = sc.nextDouble();
+
+        System.out.println("Digite os anos que trabalhou:");
+        int anos = sc.nextInt();
+
+        Double bonus;
+
+        if (anos >= 5) {
+             bonus = salario * 0.20;
+        } else {
+             bonus = salario * 0.10;
+        }
+        System.out.printf ("Bonus salarial é de %.2f", bonus);
+    }
+}
+
+
+import java.util.Scanner; // Exercicio 8 Filipe Silva Do Nascimento
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Insira a senha:");
+
+        String senha = sc.nextLine();
+
+        if  (senha.equals("R10p5")){
+            System.out.println("Acesso permitido");
+        }
+        else{
+            System.out.println("Senha incorreta");
+        }
+
+    }
+}
+
+
+import java.util.Scanner; // Exercicio 9 Filipe Silva Do Nascimento
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite 0 salario:");
+        double salario = sc.nextDouble();
+
+        System.out.println("Digite o valor da prestação:");
+        double prestacao = sc.nextDouble();
+
+        double limite = salario * 0.30;
+
+        if (prestacao <= limite){
+            System.out.println("Emprestimo concedido");
+        }
+        else{
+            System.out.println("Empretismo não pode ser concedido");
+        }
+    }
+}
+
+
+
+import java.util.Scanner; // Exercicio 10 Filipe Silva Do Nascimento
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite tres numeros:");
+        int numero1 = sc.nextInt();
+        int numero2 = sc.nextInt();
+        int numero3 = sc.nextInt();
+
+        if(numero1 == numero2 && numero2 == numero3) {
+            System.out.println("Numeros iguais");
+        }
+        else {
+            int maior;
+
+            if (numero1 >= numero2 && numero1 >= numero3) {
+                maior = numero1;
+            } else if (numero2 >= numero1 && numero2 >= numero3) {
+                maior = numero2;
+            } else {
+                maior = numero3;
+            }
+
+            System.out.println("Numero maior: " + maior);
+        }
+    }
+}
+
+
+
+import java.util.Scanner; // Exercicio 11 Filipe Silva Do Nascimento
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite a idade:");
+        int idade = sc.nextInt();
+
+        if  (idade >= 5 && idade <= 7){
+            System.out.println("Categoria infantil A");
+        }
+        else if(idade >= 8 && idade <= 10){
+            System.out.println("Categoria infantil B");
+        }
+        else if(idade >= 11 && idade <= 13){
+            System.out.println("Categoria juvenil A");
+        }
+        else if(idade >= 14 && idade <= 17){
+            System.out.println("Categoria juvenil B");
+        }
+        else if (idade >= 18){
+            System.out.println("Categoria senior");
+        }
+        else{
+            System.out.println("Muito novo para uma categoria");
+        }
+    }
+}
+
+
+
+import java.util.Scanner; // Exercicio 12 Filipe Silva Do Nascimento
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite o salario");
+        double salario = sc.nextDouble();
+        double desconto;
+
+        if (salario<=600){
+            System.out.println("Isento a desconto");
+        }
+        else if (salario <= 1200){
+            desconto = salario * 0.20;
+            System.out.printf("Desconto de: %.2f",desconto);
+        }
+        else if (salario <= 2000){
+            desconto = salario * 0.25;
+            System.out.printf("Desconto de: %.2f",desconto);
+        }
+        else{
+            desconto = salario * 0.30;
+            System.out.printf("Desconto de: %.2f",desconto);
+        }
+    }
+}
+
+
+
+import java.util.Scanner; // Exercicio 13 Filipe Silva Do Nascimento
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite o primeiro numero");
+        double num1 = sc.nextDouble();
+        System.out.println("Digite a operação (use +, -, *, /");
+        char op = sc.next().charAt(0);
+
+        System.out.println("Digite o segundo numero");
+        double num2 = sc.nextDouble();
+
+        double resultado;
+
+        if (op == '+') {
+            resultado = num1 + num2;
+            System.out.println("Resultado: " + resultado);
+        }
+        else if (op == '-') {
+            resultado = num1 - num2;
+            System.out.println("Resultado: " + resultado);
+        }
+        else if (op == '*') {
+            resultado = num1 * num2;
+            System.out.printf("Resultado: %.2f", resultado);
+        }
+        else if (op == '/') {
+            if (num2 > 0) {
+                resultado = num1 / num2;
+                System.out.printf("Resultado: %.2f", resultado);
+            }
+            else {
+                System.out.println("Impossivel de dividir");
+            }
+        }
+        else {
+            System.out.println("Sinal invalido");
+        }
+    }
+}
