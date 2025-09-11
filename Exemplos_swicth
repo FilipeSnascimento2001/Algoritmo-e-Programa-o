@@ -30,3 +30,142 @@ public class Main {
 
     }
 }
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("=====Calendario semanal=====");
+        System.out.println("1-Domingo");
+        System.out.println("2-Segunda");
+        System.out.println("3-Terça-feira");
+        System.out.println("4-Quarta-feria");
+        System.out.println("5-Quinta-feira");
+        System.out.println("6-Sexta-feria");
+        System.out.println("7-Sabado");
+        System.out.println("===Escolha um dia da semana===");
+
+        Scanner entrada = new Scanner(System.in); // Exercicio 1 Filipe Silva do Nascimento
+
+        int menu = entrada.nextInt();
+        switch (menu) {
+            case 1:
+                System.out.println("Você escolheu a opção 1");
+                System.out.println("Domingo");
+                break;
+            case 2:
+                System.out.println("Você escolheu a opção 2");
+                System.out.println("Segunda-feria");
+                break;
+            case 3:
+                System.out.println("Você escolheu a opção 3");
+                System.out.println("Terça-feira");
+                break;
+            case 4:
+                System.out.println("Você escolheu a opção 4");
+                System.out.println("Quarta-feira");
+                break;
+            case 5:
+                System.out.println("Você escolheu a opção 5");
+                System.out.println("Quinta-feira");
+                break;
+            case 6:
+                System.out.println("Você escolheu a opção 6");
+                System.out.println("Sexta-feira");
+                break;
+            case 7:
+                System.out.println("Você escolheu a opção 7");
+                System.out.println("Sabado");
+                break;
+
+            default:
+                System.out.println("Item escolhido invalido");
+        }
+        entrada.close();
+
+    }
+}
+
+
+import java.util.Scanner; // Exercicio 2 Filipe Silva do Nascimento
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("=====Calendario Mensal=====");
+        System.out.println("1-Janeiro");
+        System.out.println("2-Fevereiro");
+        System.out.println("3-Março");
+        System.out.println("4-Abril");
+        System.out.println("5-Maio");
+        System.out.println("6-Junho");
+        System.out.println("7-Julho");
+        System.out.println("8-Agosto");
+        System.out.println("9-setembro");
+        System.out.println("10-Outubro");
+        System.out.println("11-Novembro");
+        System.out.println("12-Dezembro");
+        System.out.println("===Escolha um Mês===");
+
+        Scanner entrada = new Scanner(System.in);
+
+        int menu = entrada.nextInt();
+        switch (menu) {
+            case 1:
+                System.out.println("Você escolheu a opção 1");
+                System.out.println("Janeiro");
+                break;
+            case 2:
+                System.out.println("Você escolheu a opção 2");
+                System.out.println("Fevereiro");
+                break;
+            case 3:
+                System.out.println("Você escolheu a opção 3");
+                System.out.println("Março");
+                break;
+            case 4:
+                System.out.println("Você escolheu a opção 4");
+                System.out.println("Abril");
+                break;
+            case 5:
+                System.out.println("Você escolheu a opção 5");
+                System.out.println("Maio");
+                break;
+            case 6:
+                System.out.println("Você escolheu a opção 6");
+                System.out.println("Junho");
+                break;
+            case 7:
+                System.out.println("Você escolheu a opção 7");
+                System.out.println("Julho");
+                break;
+            case 8:
+                System.out.println("Você escolheu a opção 8");
+                System.out.println("Agosto");
+                break;
+            case 9:
+                System.out.println("Você escolheu a opção 9");
+                System.out.println("Setembro");
+                break;
+            case 10:
+                System.out.println("Você escolheu a opção 10");
+                System.out.println("Outubro");
+                break;
+            case 11:
+                System.out.println("Você escolheu a opção 11");
+                System.out.println("Novembro");
+                break;
+            case 12:
+                System.out.println("Você escolheu a opção 12");
+                System.out.println("Dezembro");
+                break;
+
+
+            default:
+                System.out.println("Item escolhido invalido");
+        }
+        entrada.close();
+
+    }
+}
