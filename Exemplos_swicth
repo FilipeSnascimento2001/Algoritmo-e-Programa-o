@@ -33,7 +33,7 @@ public class Main {
 
 
 
-import java.util.Scanner;
+import java.util.Scanner; // Filipe Silva  - Exercicio 1
 
 public class Main {
     public static void main(String[] args) {
@@ -89,7 +89,7 @@ public class Main {
 }
 
 
-import java.util.Scanner; // Exercicio 2 Filipe Silva do Nascimento
+import java.util.Scanner; // Exercicio 2 - Filipe Silva do Nascimento
 
 public class Main {
     public static void main(String[] args) {
@@ -171,16 +171,218 @@ public class Main {
 }
 
 
-import java.util.Scanner; // Desafio valendo nota
+
+import java.util.Scanner; // Exercicio 3 - Filipe Silva do Nascimento
+public class Main {
+    public static void main(String[] args) {
+        String aluno, periodo;
+        Scanner entrada = new Scanner(System.in); 
+
+        System.out.println("Olá, qual o seu nome? ");
+        aluno = entrada.nextLine();
+        System.out.println("Em qual periodo você estuda?");
+        System.out.println("M - Matutino ");
+        System.out.println("V - Vespertino");
+        System.out.println("N - Noturno");
+        System.out.println("Digite a letra correspondete logo abaixo. ");
+        periodo = entrada.nextLine();
+
+        switch(periodo) {
+            case "M":
+            System.out.println("Você estuda no periodo Matutino, " + aluno);
+            break;
+             case "V":
+            System.out.println("Você estuda no periodo Vespertino, " + aluno);
+            break;
+             case "N":
+            System.out.println("Você estuda no periodo Noturno, "+ aluno);
+            break;
+            default:
+            System.out.println("Letra escolhida invalida.");
+
+        }
+
+    entrada.close();
+        
+    }
+}
+
+
+
+import java.util.Scanner; // Exercicio 4  - Filipe Silva
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        String plano;
+        double salario,aumsalario;
+        
+        aumsalario= 0;
+
+        System.out.println("Digite o valor do seu salario atualmente.");
+        salario = entrada.nextDouble();
+
+        System.out.println("Selecionei 3 planos disponiveis para que você receba um aumento de salario. Com as opção listadas logo abaixo. ");
+        System.out.println("Plano A - 10% de aumento.");
+        System.out.println("Plano B - 15% de aumento.");
+        System.out.println("Plano C - 20% de aumento.");
+        System.out.println("Digite a letra correspondete ao plano do qual você gostaria de implementar. ");
+        plano = entrada.next();
+        plano = plano.toUpperCase();
+
+        switch(plano) {
+            case "A":
+            aumsalario = salario * 1.10;
+            break;
+             case "B":
+            aumsalario = salario * 1.15;
+            break;
+             case "C":
+            aumsalario = salario * 1.20;
+            break;
+            default:
+            System.out.println("Plano escolhido invalido.");
+            entrada.close();
+            return;
+
+        }   
+        System.out.printf("O novo salario do funcionario é %.2f%n", aumsalario);
+        entrada.close();
+        
+    }
+}
+
+
+import java.util.Scanner; // Exercicio 5 - Filipe Silva
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        double valor,valor2,resultado;
+        String opcao;
+        resultado = 0;
+
+        System.out.println("Digite o primeiro numero.");
+        valor = entrada.nextDouble();
+        System.out.println("Digite o segundo numero.");
+        valor2 = entrada.nextDouble();
+
+        System.out.println("Selecione qual operação você deseja executar. ");
+        System.out.println("M - media entra os numeros.");
+        System.out.println("S - diferença do maior pelo menor.");
+        System.out.println("P = produto entre os numeros.");
+        System.out.println("D = divisão do primeiro pelo segundo. ");
+        opcao = entrada.next();
+        opcao = opcao.toUpperCase();
+
+        switch(opcao) {
+            case "M":
+            resultado = (valor + valor2) / 2;
+            System.out.printf("O valor da media entre os numeros é: %.2f%n ", resultado);
+            break;
+
+             case "S":
+            resultado = Math.abs(valor - valor2);
+            System.out.printf("A diferença entre os numeros é: %.2f%n ", resultado);
+            break;
+
+             case "P":
+            resultado = valor * valor2;
+            System.out.printf("O produto entre os numeros é: %.2f%n ", resultado);
+            break;
+
+            case "D":
+            resultado = valor / valor2;
+            System.out.printf("A divizão entre os numeros é: %.2f%n ", resultado);
+            break;
+
+            default:
+            System.out.println("Operação invalida escolhido invalido.");
+
+        } 
+        entrada.close();
+        
+    }
+}
+
+import java.util.Scanner; // Exercicio 6 - Filipe Silva
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int codigo;
+        double quantidade, total;
+        total = 0;
+        String produto = "";
+    
+
+        System.out.println("===Cardapio da lanchonte===");
+        System.out.println("Codigo - Nome - Preço");
+        System.out.println("100 - Cachorro quente R$ 1,20");
+        System.out.println("101 - Bauru simples R$ 1,30");
+        System.out.println("102 - Bauru com ovo R$ 1,50");
+        System.out.println("103 - Hamburguer R$ 1,20");
+        System.out.println("104 - Cheeseburguer R$ 1,30");
+        System.out.println("105 - Refrigerante R$ 1,00\n");
+
+        System.out.println("Digite o codigo do produto");
+        codigo = entrada.nextInt();
+
+        System.out.println("Digite a quantidade que deseja");
+        quantidade = entrada.nextDouble();
+
+        switch(codigo) {
+            case 100:
+            produto = "Cachorro Quente";
+            total = quantidade * 1.20;
+            break;
+
+            case 101:
+            produto = "Bauru simples";
+            total = quantidade * 1.30;
+            break;
+
+             case 102:
+            produto = "Bauru com ovo";
+            total = quantidade * 1.50;
+            break;
+
+            case 103:
+            produto = "Hamburguer";
+            total = quantidade * 1.20;
+            break;
+
+            case 104:
+            produto = "Cheeseburguer";
+            total = quantidade * 1.30;
+            break;
+
+            case 105:
+            produto = "Refrigerante";
+            total = quantidade * 1.00;
+            break;
+
+            default:
+            System.out.println("Codigo escolhido invalido.");
+            return;
+        } 
+        System.out.println("Produto: %s%n" + produto);
+        System.out.printf("Valor a ser pago: %.2f%n", total);
+        entrada.close();
+        
+    }
+}
+
+
+
+
+import java.util.Scanner; // Desafio do professor, site de noticias.
 
 public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int menu;
 
-
-            System.out.println("Portal de Noticias ADS: Os 18 tipos de golpes registrado pelo sistema financeiro lista pelo Banco Central do Brasil.");
-            System.out.println("A Febraban, por exemplo, divulgou em 2024 os 10 golpes mais aplicados contra clientes bancários, com base em reclamações registradas:\n ");
+        
+            System.out.println("===Portal de Noticias ADS===");
+            System.out.println("Lista dos 18 golpes registrados pelo Banco Central e Febraban:\n ");
             System.out.println("1-Golpe do WhatsApp");
             System.out.println("2-Falsas vendas");
             System.out.println("3-Falsa central telefônica");
@@ -199,94 +401,112 @@ public class Main {
             System.out.println("16-Golpe do empréstimo falso");
             System.out.println("17-Golpe do falso sequestro");
             System.out.println("18-Golpe do falso prêmio ou herança");
-            System.out.println("0-Não desejo saber sobre nenhuma das opções listadas acima.\n");
-            System.out.println("Escolha um dos golpes listados para saber mais sobre o assunto");
-            menu = entrada.nextInt();
+            System.out.println("0-Escolha o numero 0 para sair do site de noticias.\n");
+            
+            
+        do {
+            System.out.print("Escolha um dos golpes listados para saber mais sobre o assunto e digite seu número correspondente: ");
+
+            if (entrada.hasNextInt()) {
+                menu = entrada.nextInt();
 
             switch (menu) {
                 case 1:
-                    System.out.println("Golpe do WhatsApp");
-                    System.out.println("Criminosos tentam clonar a conta de WhatsApp da vítima para solicitar dinheiro aos seus contatos.");
+                    System.out.println("1 - Golpe do WhatsApp:");
+                    System.out.println("Criminosos tentam clonar a conta de WhatsApp da vítima para solicitar dinheiro aos seus contatos.\n");
                     break;
                 case 2:
-                    System.out.println("Falsas vendas");
-                    System.out.println("Criação de sites ou perfis falsos oferecendo produtos inexistentes.");
+                    System.out.println("2 - Falsas vendas:");
+                    System.out.println("Criação de sites ou perfis falsos oferecendo produtos inexistentes.\n");
                     break;
                 case 3:
-                    System.out.println("Falsa central telefônica");
-                    System.out.println("Golpistas se passam por funcionários de bancos para obter dados pessoais e financeiros.");
+                    System.out.println("3 - Falsa central telefônica:");
+                    System.out.println("Golpistas se passam por funcionários de bancos para obter dados pessoais e financeiros.\n");
                     break;
                 case 4:
-                    System.out.println("Phishing");
-                    System.out.println("Envio de e-mails ou mensagens falsas para roubar informações sensíveis.");
+                    System.out.println("4 - Phishing:");
+                    System.out.println("Envio de e-mails ou mensagens falsas para roubar informações sensíveis.\n");
                     break;
                 case 5:
-                    System.out.println("Falso investimento");
-                    System.out.println("Ofertas de investimentos fraudulentos para capturar recursos das vítimas.");
+                    System.out.println("5 - Falso investimento:");
+                    System.out.println("Ofertas de investimentos fraudulentos para capturar recursos das vítimas.\n");
                     break;
                 case 6:
-                    System.out.println("Troca de cartão");
-                    System.out.println("Substituição do cartão bancário legítimo por um falso.");
+                    System.out.println("6 - Troca de cartão:");
+                    System.out.println("Substituição do cartão bancário legítimo por um falso.\n");
                     break;
                 case 7:
-                    System.out.println("Envio de falso boleto");
-                    System.out.println("Envio de boletos falsificados para induzir ao pagamento.");
+                    System.out.println("7 - Envio de falso boleto:");
+                    System.out.println("Envio de boletos falsificados para induzir ao pagamento.\n");
                     break;
                 case 8:
-                    System.out.println("Devolução de empréstimo");
-                    System.out.println("Golpes relacionados à devolução de valores de empréstimos inexistentes.");
+                    System.out.println("8 - Devolução de empréstimo:");
+                    System.out.println("Golpes relacionados à devolução de valores de empréstimos inexistentes.\n");
                     break;
                 case 9:
-                    System.out.println("Mão fantasma");
-                    System.out.println("Utilização de dispositivos para realizar transações bancárias sem o conhecimento do titular.");
+                    System.out.println("9 - Mão fantasma:");
+                    System.out.println("Utilização de dispositivos para realizar transações bancárias sem o conhecimento do titular.\n");
                     break;
                 case 10:
-                    System.out.println("Falso motoboy");
-                    System.out.println("Entrega de documentos falsos ou cartões bancários por entregadores fraudulentos.");
+                    System.out.println("10 - Falso motoboy:");
+                    System.out.println("Entrega de documentos falsos ou cartões bancários por entregadores fraudulentos.\n");
                     break;
                 case 11:
-                    System.out.println("Golpe do PIX Agendado");
-                    System.out.println("Golpistas fingem ser de uma instituição financeira e solicitam o cancelamento de um PIX agendado, induzindo a vítima a realizar uma transferência para a conta dos criminosos.");
+                    System.out.println("11 - Golpe do PIX Agendado:");
+                    System.out.println("Golpistas fingem ser de uma instituição financeira e solicitam o cancelamento de um PIX agendado, induzindo a vítima a realizar uma transferência para a conta dos criminosos.\n");
                     break;
                 case 12:
-                    System.out.println("Golpe da Falsa Central de Segurança");
-                    System.out.println("Criminosos se passam por funcionários do banco e solicitam transferências urgentes para \"proteger\" a conta da vítima.");
+                    System.out.println("12 - Golpe da Falsa Central de Segurança:");
+                    System.out.println("Criminosos se passam por funcionários do banco e solicitam transferências urgentes para \"proteger\" a conta da vítima.\n");
                     break;
                 case 13:
-                    System.out.println("Golpe do PIX de Devolução");
-                    System.out.println("Golpistas enviam um PIX para a vítima e, posteriormente, solicitam a devolução do valor, alegando erro.");
+                    System.out.println("13 - Golpe do PIX de Devolução:");
+                    System.out.println("Golpistas enviam um PIX para a vítima e, posteriormente, solicitam a devolução do valor, alegando erro.\n");
                     break;
                 case 14:
-                    System.out.println("Golpe do Laranja");
-                    System.out.println("Utilização de contas de terceiros para realizar transações fraudulentas, muitas vezes sem o conhecimento do titular da conta.");
+                    System.out.println("14 - Golpe do Laranja:");
+                    System.out.println("Utilização de contas de terceiros para realizar transações fraudulentas, muitas vezes sem o conhecimento do titular da conta.\n");
                     break;
                 case 15:
-                    System.out.println("Golpe do falso funcionário público");
-                    System.out.println("Pedem dados e dinheiro alegando pendências fiscais ou legais.");
+                    System.out.println("15 - Golpe do falso funcionário público:");
+                    System.out.println("Pedem dados e dinheiro alegando pendências fiscais ou legais.\n");
                     break;
                 case 16:
-                    System.out.println("Golpe do empréstimo falso");
-                    System.out.println("Cobram taxas ou pedem dados para empréstimos inexistentes.");
+                    System.out.println("16 - Golpe do empréstimo falso:");
+                    System.out.println("Cobram taxas ou pedem dados para empréstimos inexistentes.\n");
                     break;
                 case 17:
-                    System.out.println("Golpe do falso sequestro");
-                    System.out.println("Ligação pedindo resgate com pedido de transferência bancária.");
+                    System.out.println("17 - Golpe do falso sequestro:");
+                    System.out.println("Ligação pedindo resgate com pedido de transferência bancária.\n");
                     break;
                 case 18:
-                    System.out.println("Golpe do falso prêmio ou herança");
-                    System.out.println("Promessas de prêmios ou herança que exigem pagamento antecipado.");
+                    System.out.println("18 - Golpe do falso prêmio ou herança:");
+                    System.out.println("Promessas de prêmios ou herança que exigem pagamento antecipado.\n");
                     break;
 
                 case 0:
-                    System.out.println("Obrigado pela participação, saindo do site de noticias....");
-                    System.out.println("Aguardamos que você volte novamente :)");
+                    System.out.println("Obrigado pela participação, saindo do site de noticias...");
                     break;
 
 
                 default:
-                    System.out.println("Nenhuma das opções selecionadas, por gentileza digite novamente qual a opção que deseja. ");
-                    break;
+                    System.out.println("Nenhuma das opções selecionadas, por gentileza digite novamente qual a opção que deseja.\n ");     
+                }
+            }else{
+                String invalido = entrada.next();
+        System.out.println("Entrada inválida: '" + invalido + "'. Digite apenas números.\n");
+        menu = -1;
             }
+                
+        } while (menu !=0);
+
         entrada.close();
     }
 }
+
+
+
+
+
+
+
