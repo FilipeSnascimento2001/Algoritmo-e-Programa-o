@@ -14,7 +14,7 @@ public class Main { //Exercicio de while (contador)
 
 public class Main { //Exercicio de while 2 (declarando números divivel por 2)
     public static void main(String[] args) {
-        int contador,resto; //declarando o contador
+        int contador,resto; //declarando o contador e o resto.
         contador = 0; //inicianlizando o contador
 
         while(contador <=100) {
