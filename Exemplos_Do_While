@@ -30,3 +30,57 @@ public class Main { //Exemplos de while 2 (declarando números divivel por 2)
         }
     }
 }
+
+
+public class Main { // Exemplo de While 3(acumulador = somar todos os numeros)
+    public static void main(String[] args) {
+        int contador=1;
+        int acumulador=0;
+
+        while(contador <=100) {
+            acumulador= acumulador + contador;
+            contador++;
+        }
+        System.out.println("A soma é "+acumulador);
+    }
+}
+
+import java.util.Scanner;
+public class Main { // Exemplo de While 4(media de notas entre 5 alunos)
+    public static void main(String[] args) {
+
+        int contador;
+        double nota, media,acumuladorNotas;
+        contador = 0;
+        acumuladorNotas = 0;
+
+        Scanner entrada = new Scanner (System.in);
+        while (contador <5) {
+            contador++;
+            System.out.println("digite uma nota: " + contador);//calcular media
+            nota = entrada.nextInt();
+            acumuladorNotas = acumuladorNotas + nota;
+
+        }
+            media = acumuladorNotas/contador;
+            System.out.println("media: "+media);
+            entrada.close();
+        }
+    }
+
+
+
+
+
+
+public class Main { //Exercicio 1
+    public static void main(String[] args) {
+        int contador;
+        contador = 100;
+
+        while(contador <=200) {
+            System.out.print(contador +" ");
+            contador++;
+        }
+    }
+}
