@@ -12,7 +12,7 @@ public class Main { //Exercicio de while (contador)
 }
 
 
-public class Main { ////Exercicio de while 2 (declarando números divivel por 2)
+public class Main { //Exercicio de while 2 (declarando números divivel por 2)
     public static void main(String[] args) {
         int contador,resto; //declarando o contador
         contador = 0; //inicianlizando o contador
