@@ -10,3 +10,23 @@ public class Main { //Exercicio de while (contador)
 
     }
 }
+
+
+public class Main { ////Exercicio de while 2 (declarando números divivel por 2)
+    public static void main(String[] args) {
+        int contador,resto; //declarando o contador
+        contador = 0; //inicianlizando o contador
+
+        while(contador <=100) {
+            resto = contador %2;
+
+            if(resto==0) {
+                System.out.println("O número " + contador + " é par");
+
+            } //imprimir só os numeros divisivel por 2 o codigo para aqui.
+            else { //Imprimir todos os números e declarar se é impar ou par, precisa impor a condição else.
+                System.out.println("O número " + contador + " é impar");
+            } contador++;
+        }
+    }
+}
