@@ -73,7 +73,7 @@ public class Main { // Exemplo de While 4(media de notas entre 5 alunos)
 
 
 
-public class Main { //Exercicio 1
+public class Main { //Exercicio 1 Filipe Silva do Nascimento
     public static void main(String[] args) {
         int contador;
         contador = 100;
@@ -84,3 +84,35 @@ public class Main { //Exercicio 1
         }
     }
 }
+
+
+import java.util.Scanner; //Exercicio 2 Filipe Silva do Nascimento
+public class Main {
+    public static void main(String[] args) {
+        int pares = 0;
+        int impares = 0;
+        int contador = 0;
+        Scanner entrada = new Scanner(System.in);
+
+        while (contador < 10) {
+            contador++;
+            System.out.println("Digite o " + contador + "º número inteiro.");
+            int num = entrada.nextInt();
+
+            if (num % 2 == 0) {
+                pares++;
+                System.out.println("O número digitado " + num + " é par");
+            } else {
+                impares++;
+                System.out.println("O número digitado " + num + " é impar");
+
+            }
+
+        }
+        System.out.println();
+        System.out.println("Quantidade de números pares:" + pares);
+        System.out.println("Quantidade de números pares:" + impares);
+    }
+}
+
+
