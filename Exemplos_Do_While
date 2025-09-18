@@ -1,4 +1,4 @@
-public class Main { //Exercicio de while (contador)
+public class Main { //Exemplos 1 de while (contador)
     public static void main(String[] args) {
         int contador;//declarando o contador
         contador = 1; //inicianlizando o contador
@@ -12,7 +12,7 @@ public class Main { //Exercicio de while (contador)
 }
 
 
-public class Main { //Exercicio de while 2 (declarando números divivel por 2)
+public class Main { //Exemplos de while 2 (declarando números divivel por 2)
     public static void main(String[] args) {
         int contador,resto; //declarando o contador e o resto.
         contador = 0; //inicianlizando o contador
