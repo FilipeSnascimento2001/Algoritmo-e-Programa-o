@@ -73,7 +73,7 @@ public class Main { // Exemplo de While 4(media de notas entre 5 alunos)
 
 
 
-public class Main { //Exercicio 1 Filipe Silva do Nascimento
+public class Main { //Exercicio 1 Filipe Silva do N. (While)
     public static void main(String[] args) {
         int contador;
         contador = 100;
@@ -86,7 +86,7 @@ public class Main { //Exercicio 1 Filipe Silva do Nascimento
 }
 
 
-import java.util.Scanner; //Exercicio 2 Filipe Silva do Nascimento
+import java.util.Scanner; //Exercicio 2 Filipe Silva do N. (While)
 public class Main {
     public static void main(String[] args) {
         int pares = 0;
@@ -114,5 +114,100 @@ public class Main {
         System.out.println("Quantidade de números pares:" + impares);
     }
 }
+
+
+import java.util.Scanner; // Exercicio 3 Filipe Silva do N. (While)
+public class Main {
+    public static void main(String[] args) {
+    Scanner entrada = new Scanner (System.in);
+    System.out.println ("Digite o numero intero:");
+    int numero = entrada.nextInt();
+    int valor = 1;
+
+    while ( valor <= numero  ) {
+        System.out.print(valor);
+        
+        if (valor *2 <= numero) {
+        System.out.print(",");
+        
+       }
+        valor *=2;
+    }
+  }
+}
+
+
+import java.util.Scanner; // Exercicio 4 Filipe Silva do N. (While)
+public class Main {
+    public static void main(String[] args) {
+    Scanner entrada = new Scanner (System.in);
+    double nota;
+    
+    do { System.out.println("Digite um numero maior ou igual a 10 ou menor ou igual a 20");
+    nota = entrada.nextDouble(); 
+    }
+    
+    while (nota <10 || nota >20);
+        nota = nota /2;
+        System.out.println("o numero dividido por 2 é " + nota);
+        entrada.close();
+    }
+}
+
+
+public class Main { //Exercicio 5 Filipe Silva do N. (While)
+    public static void main(String[] args) {
+        int numero = 5;
+        int i = 1;      
+
+        System.out.println("Tabuada do " + numero + ":");
+
+        while (i <= 10) {
+            System.out.println(numero + " x " + i + " = " + (numero*i));
+            i++;
+        }
+    }
+}
+
+
+import java.util.Scanner; //Exercicio 6 Filipe Silva do N. (While)
+public class Main {
+    public static void main(String[] args) {
+    Scanner entrada = new Scanner (System.in);
+    int numero = 1;
+    int resposta;
+    int menor = 0; 
+    
+    boolean primeiroNumero = true;
+     
+     do { 
+     System.out.println("Digite 10 numeros inteiros:");
+     resposta = entrada.nextInt();
+     
+        if (numero < 0) {
+           System.out.println ("numero invalido digite novamente.");
+     
+        }
+        else if (primeiroNumero){
+            menor = numero;
+            primeiroNumero = false;
+            numero++;
+        }
+        else if (numero < menor) {
+                menor = numero;
+                numero++;
+        }
+        else {
+                    numero++;
+        }
+        } while (numero <= 10);
+                System.out.println("O menor numero digitado é: "+ menor);
+                entrada.close();
+     }
+
+}
+
+
+
 
 
