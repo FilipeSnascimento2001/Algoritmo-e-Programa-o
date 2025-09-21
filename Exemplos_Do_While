@@ -282,65 +282,77 @@ public class Main {
 }
 
 
-import java.util.Scanner;
+import java.util.Scanner; // Exercicio 9 Filipe Silva do N. (While) 
+
 public class Main {
     public static void main(String[] args) {
-    Scanner entrada = new Scanner (System.in);
-    int codigo, quantidade;
-    double total = 0;
-    String produto = "";
-    
-    int produto = 1;
-    
-    while (produto <= 2) {
-        System.out.println("===Cardapio da lanchonete===")
-        System.out.println("Codigo | Produto | Preço")
-        System.out.println("100 | Cachorro-quente | R$ 1,20")
-        System.out.println("101 | Bauru Simples | R$ 1,30")
-        System.out.println("102 | Bauru com ovo | R$ 1,50")
-        System.out.println("103 | Hambúrguer | R$ 1,20")
-        System.out.println("104 | Cheeseburguer | R$ 1,30")
-        System.out.println("105 | Refrigerante | R$ 1,00")
-    
-    
-    do {
-        System.out.println("Digite o codigo do " + produto + ":");
-        codigo = entrada.nextInt();
-        
-        System.out.println("Digite a quantidade desejada:");
-        quantidade = entrada.nextInt();
-        
-        
-        
-        if(codigo < 100 || codigo > 105) {
-            System.out.println("Codigo invalida, digite novamente o codigo do produto desejado:");
-          }
-          
-        }while (codigo < 100 || codigo > 105);
-        
-    do {
-        System.out.println("Digite a nota do 2ª nota do Aluno (0 a 10):");
-        nota2 = entrada.nextDouble();
-        
-        
-        if(nota2 < 0 || nota2 > 10) {
-            System.out.println("Nota invalida, digite novamente a nota da prova:");
-          }
-          
-        }while (nota2 < 0 || nota2 > 10); 
-        
-        media = (nota1+nota2)/2;
-        System.out.printf("A media do aluno %d é %.2f%n", aluno, media);
-        aluno++;
+        Scanner entrada = new Scanner(System.in);
+        double total = 0;
+        boolean continuar = true;
+
+        while (continuar) {
+            System.out.println("=== Cardápio da Lanchonete ===");
+            System.out.println("Código | Produto           | Preço");
+            System.out.println("100    | Cachorro-quente   | R$ 1,20");
+            System.out.println("101    | Bauru Simples     | R$ 1,30");
+            System.out.println("102    | Bauru com ovo     | R$ 1,50");
+            System.out.println("103    | Hambúrguer        | R$ 1,20");
+            System.out.println("104    | Cheeseburguer     | R$ 1,30");
+            System.out.println("105    | Refrigerante      | R$ 1,00");
+
+            System.out.print("Digite o código do produto: ");
+            int codigo = entrada.nextInt();
+
+            System.out.print("Digite a quantidade desejada: ");
+            int quantidade = entrada.nextInt();
+
+            double precoUnitario = 0;
+            String nomeProduto = "";
+
+            switch (codigo) {
+                case 100:
+                    nomeProduto = "Cachorro-quente";
+                    precoUnitario = 1.20;
+                    break;
+                case 101:
+                    nomeProduto = "Bauru simples";
+                    precoUnitario = 1.30;
+                    break;
+                case 102:
+                    nomeProduto = "Bauru com ovo";
+                    precoUnitario = 1.50;
+                    break;
+                case 103:
+                    nomeProduto = "Hambúrguer";
+                    precoUnitario = 1.20;
+                    break;
+                case 104:
+                    nomeProduto = "Cheeseburguer";
+                    precoUnitario = 1.30;
+                    break;
+                case 105:
+                    nomeProduto = "Refrigerante";
+                    precoUnitario = 1.00;
+                    break;
+                default:
+                    System.out.println("Código inválido. Tente novamente.");
+                    continue;
+            }
+
+            double totalProduto = precoUnitario * quantidade;
+            total += totalProduto;
+
+            System.out.printf("Você comprou %d x %s - Total: R$ %.2f%n", quantidade, nomeProduto, totalProduto);
+
+            System.out.print("Deseja comprar mais produtos? (1 - Sim / 0 - Não): ");
+            int resposta = entrada.nextInt();
+
+            if (resposta != 1) {
+                continuar = false;
+            }
         }
-        
+
+        System.out.printf("\nValor total da compra: R$ %.2f\n", total);
         entrada.close();
     }
-    
 }
-
-
-
-
-
-
