@@ -207,6 +207,80 @@ public class Main {
 
 }
 
+import java.util.Scanner; //Exercicio 7 Filipe Silva do N. (While) 
+public class Main {
+    public static void main(String[] args) {
+    Scanner entrada = new Scanner (System.in);
+    int contador = 1;
+    int PessoasSemObesidade = 0;
+    
+    
+    do { 
+        System.out.println("Digite qual a sua altura:");
+        double altura = entrada.nextDouble();
+
+        System.out.println("Digite qual o seu peso:");
+        double peso = entrada.nextDouble();
+        
+        double imc = peso/ (altura * altura);
+        System.out.printf("o IMC da %d: pessoa é: %.2f%n ", contador, imc);
+        
+        if (imc >= 18.5 && imc <=24.9) {
+            PessoasSemObesidade++;
+            
+        }
+        contador++;
+    }while (contador <=10);
+    System.out.println("quantidade de pessoa com o IMC entre 18,5 e 24,9: "+ PessoasSemObesidade);
+    entrada.close();
+
+    }
+}
+
+
+
+import java.util.Scanner; // Exercicio 8 Filipe Silva do N. (While) 
+public class Main {
+    public static void main(String[] args) {
+    Scanner entrada = new Scanner (System.in);
+    double nota1,nota2,media;
+    int aluno =1;
+    
+    while (aluno <= 5) {
+        System.out.println("Aluno " + aluno + ":");
+    
+    
+    do {
+        System.out.println("Digite a nota do 1ª nota do Aluno (0 a 10):");
+        nota1 = entrada.nextDouble();
+        
+        
+        if(nota1 < 0 || nota1 > 10) {
+            System.out.println("Nota invalida, digite novamente a nota da prova:");
+          }
+        }while (nota1 < 0 || nota1 > 10);
+        
+    do {
+        System.out.println("Digite a nota do 2ª nota do Aluno (0 a 10):");
+        nota2 = entrada.nextDouble();
+        
+        
+        if(nota2 < 0 || nota2 > 10) {
+            System.out.println("Nota invalida, digite novamente a nota da prova:");
+          }
+          
+        }while (nota2 < 0 || nota2 > 10); 
+        
+        media = (nota1+nota2)/2;
+        System.out.printf("A media do aluno %d é %.2f%n", aluno, media);
+        aluno++;
+        }
+        
+        entrada.close();
+    }
+    
+}
+
 
 
 
