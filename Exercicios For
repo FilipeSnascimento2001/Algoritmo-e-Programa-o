@@ -36,4 +36,32 @@ public class Main {
     }
 }
 
+import java.util.Scanner; // Filipe Silva Do Nascimento - Exercico 3
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int cont =0;
+        int i;
+        double somaaltura = 0;
+        double mediaAltura;
+
+        for ( i = 1; i <= 2; i ++) {
+            System.out.println("Digite a idade da "+ i + "º pessoa.");
+            int idade = entrada.nextInt();
+
+            System.out.println("Digite a altura da "+ i + " pessoa.");
+            double altura = entrada.nextDouble();
+
+            if (idade >= 50) {
+            cont++;
+            somaaltura += altura;
+
+            }
+
+    }
+        mediaAltura = somaaltura/cont;
+        System.out.println("A media da altura entra os idoso acima de 50 anos é:" + mediaAltura);
+}
+}
+
 
