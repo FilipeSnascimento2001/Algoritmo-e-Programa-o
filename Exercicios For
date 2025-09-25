@@ -1,0 +1,39 @@
+
+public class Main { // Filipe Silva Do Nascimento - Exercico 1
+    public static void main(String[] args) {
+        int cont;
+
+        for (cont = 100;cont> 0;cont--) {
+            System.out.println(cont);
+        }
+    }
+}
+
+
+public class Main { // Filipe Silva Do Nascimento - Exercico 2
+    public static void main(String[] args) {
+        int cont,conq;
+        for (cont =15; cont <=100; cont++) {
+            conq = cont * cont;
+            System.out.println("O número " + cont + " elevado ao quadrado é:" + conq);
+
+        }
+    }
+}
+
+
+import java.util.Scanner; // // Filipe Silva Do Nascimento - Exercico 3
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int cont;
+        System.out.println("Digite um número inteiro");
+        int num = entrada.nextInt();
+
+        for (cont = num; cont >= 1; cont --) {
+            System.out.println(cont);
+        }
+    }
+}
+
+
