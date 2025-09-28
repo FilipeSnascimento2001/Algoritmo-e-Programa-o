@@ -36,7 +36,7 @@ public class Main {
     }
 }
 
-import java.util.Scanner; // Filipe Silva Do Nascimento - Exercico 3
+import java.util.Scanner; // Filipe Silva Do Nascimento - Exercico 4
 public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
@@ -64,4 +64,78 @@ public class Main {
 }
 }
 
+import java.util.Scanner; //  Filipe Silva Do Nascimento - Exercico 5 
 
+public class Main {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    double pes1, not1;
+    int repro, aprov, exam, cont;
+    System.out.println("Seja bem vindo, oriente a nota dos alunos ");
+    repro =0;
+    exam = 0;
+    aprov = 0;
+    for (cont = 1;cont < 7; cont++){
+    pes1 = 0;
+    System.out.println("Informe as duas notas do " +cont+ "º Aluno ");
+    pes1 += sc.nextDouble();
+    pes1 += sc.nextDouble();
+    if ((pes1/2) < 3){
+        System.out.println("O aluno está reprovado!");
+        System.out.println("a media das notas é " +(pes1/2) );
+        repro++;
+        System.out.println(" A quantidade alunos reprovados é: "+ repro );
+    }
+    else if ((pes1/2) > 3 && ((pes1/2)< 7)){
+        System.out.println("O Aluno está de exame");
+        System.out.println("a media das notas é " +(pes1/2) );
+        exam++;
+        System.out.println("A quantidade de alunos de exames é: "+exam );
+
+    }
+
+    else {
+        System.out.println("O Aluno está aprovado");
+        System.out.println("a media das notas é " +(pes1/2) );
+        aprov++;
+        System.out.println("A quantidade de alunos aprovados é: " +aprov);
+    }
+    }
+
+    }
+}
+
+
+import java.util.Scanner; //  Filipe Silva Do Nascimento - Exercico 7
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int idade, cont, cont_idos = 0;
+        double cont_40;
+        double altura, med_alt, soma_alt = 0;
+        double peso, porcentagem = 0;
+        System.out.println("Sejam bem vindos, informe as idades as alturas e peso: ");
+        for (int i = 0; i < 10; i++) {
+            cont_40 = 0;
+            idade = sc.nextInt();
+            altura = sc.nextDouble();
+            peso = sc.nextDouble();
+            if ( 20 > idade && idade > 10 ) {
+                soma_alt += altura;
+                i++;
+                med_alt = soma_alt / i;
+                System.out.println("A media de altura de pessoas entre 10 e 20 anos é:" +med_alt);}
+            if ( idade >= 50){
+                cont_idos++;
+                System.out.println("A quantidade pessoas com  50 anos ou mais é " +cont_idos);}
+            if (peso <= 40) {
+                cont_40++;
+                porcentagem = (cont_40/10)*100 ;
+                System.out.println("A porcentagem de pessoas com menos de 40 kg é: "+ porcentagem +"%");
+
+            }
+
+            }
+
+            }
+        }
