@@ -153,5 +153,30 @@ public class Main {
     }
 }
 
+import java.util.Random; // Exercicio 3 - Aleatorios 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Random random = new Random();
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("Números aleatórios de (1 a 10)");
+        int aleatorios = random.nextInt(10) + 1; 
+        System.out.println("Quantidade sorteada: " + aleatorios);
+
+        int sorteados[] = new int[aleatorios];
+
+        System.out.println("Números sorteados:");
+        for (int i = 0; i < aleatorios; i++) {
+            sorteados[i] = random.nextInt(10) + 1;
+            System.out.println(sorteados[i]);
+        }
+
+        entrada.close();
+    }
+}
+
+
 
 
