@@ -1,0 +1,157 @@
+import java.util.Scanner; // exercicio 1
+public class Main {
+    public static void main(String[] args){
+      Scanner entrada = new Scanner(System.in);
+      double [] numeros = new double[10];
+
+    for (int i = 0; i < 10; i++) { 
+        System.out.println("Digite o número " + (i + 1)); 
+        numeros[i]= entrada.nextDouble();
+      }
+      System.out.println("");
+      for (int i = 0; i < 10; i++) {
+        System.out.println("Números: " + (i + 1) + " = " + numeros[i]);
+      }
+      entrada.close();
+    }
+  }
+
+  import java.util.Scanner; // exercicio 2
+public class Main {
+    public static void main(String[] args){
+      Scanner entrada = new Scanner(System.in);
+      int [] numeros = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+    for (int i = 0; i < 10; i++) { 
+        if (numeros[i] % 2 == 0){
+            System.out.println("O numero " + numeros[i] + " é par." );
+        } 
+    }
+         for (int i = 0; i < 10; i++) { 
+        if (numeros[i] % 2 != 0){
+            System.out.println("O numero " + numeros[i] + " é impar." );
+            
+        }
+     }
+      entrada.close();
+    }
+  }
+
+
+  public class Main { // exercicio 3
+    public static void main(String[] args){
+      
+      String [] nomes = {"Filipe", "Isabela", "Leonardo", "Larissa", "Rodrigo"};
+      System.out.println("Os nomes do ultimo ao primeiro são: ");
+      
+      
+      for (int i = nomes.length - 1; i >= 0; i--) { 
+          System.out.println(nomes[i]);
+        
+            
+        } 
+        System.out.println();
+        System.out.println("O primeiro nome é: " + nomes[0]);
+        System.out.println("O ultimo nome é: " + nomes[nomes.length - 1]);
+    }
+ }
+   
+
+   import java.util.Scanner; // exercicio 4
+public class Main {
+    public static void main(String[] args){
+      Scanner entrada = new Scanner(System.in);
+      int [] vetor_A = new int[5];
+      int [] vetor_B = new int[5];
+
+    
+    for (int i = 0; i < 5; i++) { 
+         System.out.println("Digite o " + (i + 1) + " número do vetor A.");
+         vetor_A[i] = entrada.nextInt();
+        } 
+
+        System.out.println();
+    for (int i = 0; i < 5; i++) { 
+         vetor_B[i] = vetor_A[i] * 3;
+         
+     }
+     System.out.println("Valores do vetor B");
+
+     for (int i = 0; i < 5; i++) {
+        System.out.printf("\nValores do vetor B: %d", vetor_B[i]);
+     }
+
+      entrada.close();
+    }
+  }
+
+  import java.util.Scanner; // exercicio 5
+public class Main {
+    public static void main(String[] args){
+      Scanner entrada = new Scanner(System.in);
+      int [] vetor_A = new int[5];
+      int [] vetor_B = new int[5];
+      int [] vetor_C = new int[5];
+
+    
+    for (int i = 0; i < 5; i++) {  // Vetor A
+         System.out.println("Digite o " + (i + 1) + " número do vetor A.");
+         vetor_A[i] = entrada.nextInt();
+        } 
+
+        System.out.println();
+   for (int i = 0; i < 5; i++) {  // Vetor B
+         System.out.println("Digite o " + (i + 1) + " número do vetor B.");
+         vetor_B[i] = entrada.nextInt();
+        } 
+
+        System.out.println();
+   for (int i = 0; i < 5; i++) { // Vetor C com a subtração do Vetor A por B
+         vetor_C[i] = vetor_A[i] - vetor_B[i];
+         
+     }
+     System.out.println("Valores do vetor C\n"); // Imprimindo valores do Vetor C
+
+   for (int i = 0; i < 5; i++) {
+        System.out.println("Valores do vetor C: " + vetor_C[i]);
+        
+     }
+
+      entrada.close();
+    }
+  }
+
+
+   public class Main { // exercicio 6
+    public static void main(String[] args) {
+        int[] A = {10,20,30,40};
+        int[] B = {8,16,25,22,50,27,24};
+
+        //Vetor C junção de A + B
+        int[] C = new int [A.length + B.length];
+
+        //copiando os elemtnos de A para C
+        for (int i = 0; i < A.length; i++) {
+            C[i] = A[i];
+        }
+        for (int i = 0; i < B.length; i++) {
+            C[A.length + i] = B[i];
+        }
+
+        System.out.println("Vetor A:");
+        for (int valor : A ) {
+            System.out.print(valor + " " );
+        }
+        System.out.println("\n\nVetor B:");
+        for (int valor : B ) {
+            System.out.print(valor + " ");
+        }
+        System.out.println("\n\nVetor C:");
+        for (int valor : C ) {
+            System.out.print(valor + " ");
+        }
+    }
+}
+
+
+
